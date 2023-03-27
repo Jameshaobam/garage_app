@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:garage_app/screens/explore_parking_screen.dart';
 import 'package:garage_app/screens/home_screen.dart';
+import 'package:garage_app/screens/parking_area_detail_screen.dart';
 import './screens/start_screen.dart';
 
 void main() {
@@ -23,6 +25,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "/":(context) => StartScreen(),
         HomeScreen.routeName:(context) => const HomeScreen(),
+        ExploreParkingArea.routeName:(context) => const ExploreParkingArea(),
+        ParkingAreaDetailScreen.routeName:(context) => const ParkingAreaDetailScreen(),
       },
     );
   }
